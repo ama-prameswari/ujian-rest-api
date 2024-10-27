@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ASUS/OneDrive/Document/Experience/juaraCoding_PT.DIKA/UjianWeek4/ujian-rest-api/src/test/java/com/juaracoding/MovieDetailsTest.java">
+        <classes>
+            <class name="com.juaracoding.MovieDetailsTest">
+                <methods>
+                    <include name="testMovieDetails01"/>
+                    <include name="testMovieDetails02"/>
+                    <include name="testMovieDetails03"/>
+                    <include name="testInvalidMovieId"/>
+                    <include name="testInvalidApiKey"/>
+                    <include name="testInvalidPageParameter"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/Users/ASUS/OneDrive/Document/Experience/juaraCoding_PT.DIKA/UjianWeek4/ujian-rest-api/src/test/java/com/juaracoding/MovieNowPlayingTest.java">
+        <classes>
+            <class name="com.juaracoding.MovieNowPlayingTest">
+                <methods>
+                    <include name="testMovieNowPlaying01"/>
+                    <include name="testMovieNowPlaying02"/>
+                    <include name="testMovieNowPlaying03"/>
+                    <include name="testInvalidApiKey"/>
+                    <include name="testInvalidEndpoint"/>
+                    <include name="testMissingApiKey"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/Users/ASUS/OneDrive/Document/Experience/juaraCoding_PT.DIKA/UjianWeek4/ujian-rest-api/src/test/java/com/juaracoding/MoviePopularTest.java">
+        <classes>
+            <class name="com.juaracoding.MoviePopularTest">
+                <methods>
+                    <include name="testMoviePopular01"/>
+                    <include name="testMoviePopular02"/>
+                    <include name="testMoviePopular03"/>
+                    <include name="testInvalidApiKey"/>
+                    <include name="testInvalidEndpoint"/>
+                    <include name="testInvalidPageParameter"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/Users/ASUS/OneDrive/Document/Experience/juaraCoding_PT.DIKA/UjianWeek4/ujian-rest-api/src/test/java/com/juaracoding/RatingTest.java">
+        <classes>
+            <class name="com.juaracoding.RatingTest">
+                <methods>
+                    <include name="testPostMovieRating"/>
+                    <include name="testWithoutContentType"/>
+                    <include name="testRequestWithoutToken"/>
+                    <include name="testWrongUrl"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
