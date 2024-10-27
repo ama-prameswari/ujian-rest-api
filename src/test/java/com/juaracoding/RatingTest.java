@@ -48,7 +48,7 @@ public class RatingTest {
         request.body(requestBody.toJSONString());
         Response response = request.post("/1189668/rating");
 
-        Assert.assertEquals(response.getStatusCode(), 400); // Bad Request
+        Assert.assertEquals(response.getStatusCode(), 400); // 400 Bad Request
         Assert.assertFalse(response.getBody().jsonPath().getBoolean("success"));
         Assert.assertTrue(response.getBody().jsonPath()
                 .getString("status_message").contains("Invalid parameters"));
